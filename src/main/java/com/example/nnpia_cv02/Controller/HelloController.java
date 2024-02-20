@@ -14,11 +14,16 @@ public class HelloController
         return "Hello world from Spring Boot application.";
     }
 
-    @GetMapping("/say_hello_to_me/{name}")
+    @GetMapping("/sayHello/{name}")
     public String helloSomebody(@PathVariable String name) { return "Hello " + name;}
 
-    @RequestMapping(value = "/hi/{name}", method = RequestMethod.GET)
+    @RequestMapping(value = "/hiSomebody/{name}", method = RequestMethod.GET)
     public String getSomeGreetings(@PathVariable String name) {
         return "Hi " + name;
+    }
+
+    @GetMapping("/hi")
+    public String foo(@RequestParam String name) {
+        return "hi " + name;
     }
 }
