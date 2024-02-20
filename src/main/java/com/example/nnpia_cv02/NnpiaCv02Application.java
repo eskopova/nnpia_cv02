@@ -1,5 +1,6 @@
 package com.example.nnpia_cv02;
 
+import com.example.nnpia_cv02.Controller.HelloController;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
