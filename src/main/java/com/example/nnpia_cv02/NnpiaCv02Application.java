@@ -28,7 +28,7 @@ public class NnpiaCv02Application {
 
 		GetAllItemsController getAllItemsController = new GetAllItemsController();
 		GetItemByIdController getItemByIdController = new GetItemByIdController();
-		
+
 		getAllItemsController.getAllItems(peopleMap);
 		getItemByIdController.getItemById(peopleMap, 2);
 

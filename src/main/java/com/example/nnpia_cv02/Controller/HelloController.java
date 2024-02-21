@@ -9,6 +9,10 @@ import org.springframework.web.bind.annotation.*;
 // and it's the combination of @Controller and @ResponseBody annotation
 public class HelloController
 {
+    // XML uses tags to define the elements and stores data in a tree structure,
+    // whereas data in JSON is stored like a map with key/value pairs. YAML,
+    // on the other hand,allows representation of data both in list or
+    // sequence format and in the form of a map with key/value pairs.
     @GetMapping("")
     public String helloWorld() {
         return "Hello world from Spring Boot application.";
